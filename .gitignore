@@ -1,0 +1,104 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@CarlosResendiz 
+angular
+/
+angular
+3.2k
+73.6k
+19.3k
+Code
+Issues
+2.1k
+Pull requests
+206
+Actions
+Projects
+6
+Security
+Insights
+angular/.gitignore
+@zarend
+zarend fix(dev-infra): add vim .swp files to gitignore (#40094)
+…
+Latest commit 19d43af on Dec 11, 2020
+ History
+ 24 contributors
+@alexeagle@mhevery@gkalpak@IgorMinar@tbosch@vsavkin@josephperrott@petebacondarwin@ocombe@zarend@vicb@scheglov
+57 lines (45 sloc)  843 Bytes
+  
+.DS_STORE
+
+/dist/
+/bazel-out
+/integration/bazel/bazel-*
+*.log
+node_modules
+
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.devcontainer/*
+!.devcontainer/README.md
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+.settings/
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+*.swo
+*.swp
+modules/.settings
+modules/.vscode
+.vimrc
+.nvimrc
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
+
+# build-analytics
+.build-analytics
+
+# rollup-test output
+/modules/rollup-test/dist/
+
+# User specific bazel settings
+.bazelrc.user
+
+# User specific ng-dev settings
+.ng-dev.user*
+
+.notes.md
+baseline.json
+
+# Ignore .history for the xyz.local-history VSCode extension
+.history
+
+# CLDR data
+tools/gulp-tasks/cldr/cldr-data/
+
+# Husky
+.husky/_
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
